@@ -1,0 +1,141 @@
+body{
+    background-size: cover;
+}
+
+#notes{
+    display:flex;
+    justify-content: space-evenly;
+    width:509px;
+    height:50px;
+}
+
+
+.bookmarks{
+    background-color: aliceblue;
+    font-size: large;
+    display:inline;
+    height:50px;
+    width:95px;
+    font-family: cursive;
+    align-content: center;
+    text-align: center;    
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    transition: transform 0s;
+    position: relative;
+    left:550px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#outer {
+    margin-right: 150px; 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+#content-container {
+    transform: scale(1.2); 
+    transform-origin: top right; 
+}
+
+#about{
+    background-color:#fc78b5dc ;
+    height:60px;
+    z-index: 1;
+}
+#about:hover{
+    background-color: #ff99c8;
+    transform: translateY(-0.5cm);
+    height: 79px; /* Increase the height to maintain the connection */
+    margin-bottom: -10px; /* Prevent the element from pushing down other content */
+}
+#skills{
+    background-color: #f0e477;
+    height:60px;
+    z-index: 1;
+}
+#skills:hover{
+    background-color: #fdf4af;
+    transform: translateY(-0.5cm);/* Move the bookmark up */
+    height: 79px; /* Increase the height to maintain the connection */
+    margin-bottom: -10px; /* Prevent the element from pushing down other content */
+}
+
+#projects{
+    background-color: #7ffaae;
+    height:60px;
+    z-index: 1;
+}
+#projects:hover{
+    background-color: #bff3d3;
+    transform: translateY(-0.5cm);/* Move the bookmark up */
+    height: 79px; /* Increase the height to maintain the connection */
+    margin-bottom: -10px; /* Prevent the element from pushing down other content */
+}
+#experience{
+    background-color: #5ec6fa;
+    height:90px;
+    z-index: 1;
+}
+
+.main-image {
+    display: block;
+    margin-left: 20px; /* Adjust this value to the width of your spiral image */
+}
+.black{
+    width: 509px;
+    height: 659px;
+    margin-left: 20px;
+    background-color: black;
+    display:inline;
+}
+#pages{
+    display:flex;
+    flex-direction: row;
+}
+.white{
+    display:inline;
+    background-color: white;
+    position:absolute;
+    width:490px;
+    height:640px;
+    margin:9.5px;
+}
+
+.spiral {
+    width: 80px; /* Width of the spiral */
+    height: 650px; /* Height of the notebook */
+    background: url('onering.png') repeat-y center;
+    background-size: contain;
+    position: absolute;
+    right:480px;
+    bottom:10px;
+    z-index: 1; /* Ensure it sits between the two black divs */
+}
+#experiencetext{
+    height:60px;
+}
+
+#leftpage{
+    background-color: white;
+    height:600px;
+    width: 440px;
+    position:absolute;
+    left:17px;
+    top:20px;
+    border:  2px dotted grey;
+}
+#rightpage{
+    background-color: white;
+    height:600px;
+    width: 440px;
+    position:absolute;
+    right:19px;
+    top:20px;
+    border:  2px dotted grey;
+}
